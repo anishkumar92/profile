@@ -12,7 +12,7 @@
   },
   "hosting": {
     "site": "anishkumar",
-    "public": "profile/dist/profile",
+    "public": "dist/profile",
     "ignore": [
       "firebase.json",
       "**/.*",
