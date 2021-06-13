@@ -1,18 +1,14 @@
-body {
-    position: relative; /* usually the parent, in this case the body element, has position relative so that the absolute positioned child is positioned relative to it */
-    height: 100vh; /* 100% of the viewport height */
-    margin: 0; /* recommended */
+// body {
+//     position: relative; /* usually the parent, in this case the body element, has position relative so that the absolute positioned child is positioned relative to it */
+//     height: 100vh; /* 100% of the viewport height */
+//     margin: 0; /* recommended */
 
-  }
+//   }
   
   h1 {
-   position: absolute; /* taken out of the normal flow of the document */
-   top: 50%; /* moved down by 50% of the screen height */
-   transform: translateY(-50%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
-   width: 100%; /* needs to be defined to keep the default block behavior */
-   text-align: center;
-   margin: 0; /* again, for perfect center */
-   font-size: 170px;
+   position: relative; /* taken out of the normal flow of the document */
+  //  top: 0%;
+   font-size: 50px;
    color: #c2185b;
    background-color: #c2185b;
    background-image: linear-gradient(50deg, rgb(78, 179, 75), rgb(86, 206, 214));
@@ -25,7 +21,7 @@ body {
   }
 
   .social-icon {
-    font-size: 100px;
+    font-size: xx-large;
     padding: 20px;
     color: #c2185b;
     background-color: #c2185b;
@@ -38,18 +34,20 @@ body {
   }
   
   .icon-center {
+    // display: flex;
     text-align: center;
-   position: absolute; /* taken out of the normal flow of the document */
-left: 50%;
-    top: 80%; /* moved down by 50% of the screen height */
-   transform: translateY(-50%) translateX(-50%);
+   position: relative; /* taken out of the normal flow of the document */
+// left: 50%;
+    // top: 80%;
+    // min-height: 80vh /* moved down by 50% of the screen height */
+//    transform: translateY(-50%) translateX(-50%);
   }
   
   
 
   .container{
-    top: 9%;
-    left: 50%;
+    // top: 9%;
+    // left: 50%;
     position: absolute;
-    transform: translateX(-45%);
+    // transform: translateX(-45%);
   }
