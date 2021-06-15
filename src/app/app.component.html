@@ -1,15 +1,9 @@
-<div class="icon-center">
-    <img src="../assets/img/bwdp.png" alt="Autumn" width="300">
-
-<div >
-    <h1 center>Anish Kumar</h1>
-   <div class="col-md--12"> <p>Frontend Developer | Angular </p></div>
-   <div class="col-md-12"> <a href="https://github.com/anishkumar92" target="new"><i class="fa social-icon fa-github"></i></a>
-    <a href="https://www.facebook.com/anishkumar92" target="new"><i class="fa social-icon fa-facebook-official" aria-hidden="true"></i></a>
-    <a href="https://www.instagram.com/anish_srinivaasan/" target="new"><i class="fa social-icon fa-instagram" aria-hidden="true"></i></a>
-    <a href="https://www.linkedin.com/in/anish-srinivaasan/" target="new"><i class="fa social-icon fa-linkedin" aria-hidden="true"></i></a>
-    <a href="https://twitter.com/anishkumar92" target="new"><i class="fa social-icon fa-twitter" aria-hidden="true"></i></a>
-</div>
-<div class="col-md-12"> <p>anishkumar92@gmail.com</p></div>
-</div>
-</div>
+<div class="wrapper">
+    <app-header></app-header>
+    <div [@routeAnimations]="prepareRoute(outlet)" class="edge-screen">
+      <router-outlet #outlet="outlet"></router-outlet>
+    </div>
+    <div class="push"></div>
+  </div>
+  
+  <!-- <app-footer class="footer"></app-footer> -->

@@ -1,0 +1,53 @@
+// body {
+//     position: relative; /* usually the parent, in this case the body element, has position relative so that the absolute positioned child is positioned relative to it */
+//     height: 100vh; /* 100% of the viewport height */
+//     margin: 0; /* recommended */
+
+//   }
+  
+h1 {
+  position: relative; /* taken out of the normal flow of the document */
+ //  top: 0%;
+  font-size: 50px;
+  color: #c2185b;
+  background-color: #c2185b;
+  background-image: linear-gradient(50deg, rgb(78, 179, 75), rgb(86, 206, 214));
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+ 
+ }
+
+ .social-icon {
+   font-size: xx-large;
+   padding: 20px;
+   color: #c2185b;
+   background-color: #c2185b;
+   background-image: linear-gradient(45deg, #c2185b, #d699b1);
+   background-size: 100%;
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   -webkit-text-fill-color: transparent; 
+   -moz-text-fill-color: transparent;
+ }
+ 
+ .icon-center {
+   // display: flex;
+   text-align: center;
+  position: relative; /* taken out of the normal flow of the document */
+// left: 50%;
+   // top: 80%;
+   // min-height: 80vh /* moved down by 50% of the screen height */
+//    transform: translateY(-50%) translateX(-50%);
+ }
+ 
+ 
+
+ .container{
+   // top: 9%;
+   // left: 50%;
+   position: absolute;
+   // transform: translateX(-45%);
+ }

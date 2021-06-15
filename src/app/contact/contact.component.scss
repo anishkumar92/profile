@@ -1,0 +1,31 @@
+
+ .social-icon {
+    font-size: xx-large;
+    padding: 20px;
+    color: #c2185b;
+    background-color: #c2185b;
+    background-image: linear-gradient(45deg, #c2185b, #d699b1);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+  }
+  
+  .icon-center {
+    // display: flex;
+    text-align: center;
+   position: relative; /* taken out of the normal flow of the document */
+ // left: 50%;
+    // top: 80%;
+    // min-height: 80vh /* moved down by 50% of the screen height */
+ //    transform: translateY(-50%) translateX(-50%);
+  }
+
+  
+ .container{
+    // top: 9%;
+    // left: 50%;
+    position: absolute;
+    // transform: translateX(-45%);
+  }
