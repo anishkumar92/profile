@@ -11,17 +11,14 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    data: { animation: 'home' },
   },
   {
     path: 'home',
     component: HomeComponent,
-    data: { animation: 'home' },
   },
   {
     path: 'about',
     component: AboutComponent,
-    data: { animation: 'about' },
   },
   {
     path: 'contact',
@@ -30,6 +27,7 @@ const routes: Routes = [
   {
     path: 'skills',
     component: SkillsComponent,
+    
   },
   {
     path: 'exp',

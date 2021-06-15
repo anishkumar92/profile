@@ -9,11 +9,11 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'Anish Kumar - Web Developer';
 
-  prepareRoute(outlet: RouterOutlet) {
-    return (
-      outlet &&
-      outlet.activatedRouteData &&
-      outlet.activatedRouteData['animation']
-    );
-  }
+  // prepareRoute(outlet: RouterOutlet) {
+  //   return (
+  //     outlet &&
+  //     outlet.activatedRouteData &&
+  //     outlet.activatedRouteData['animation']
+  //   );
+  // }
 }
