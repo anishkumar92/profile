@@ -10,6 +10,10 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
+import {MatListModule} from '@angular/material/list';
+
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
@@ -19,7 +23,8 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SocialIconComponent } from './social-icon copy/social-icon.component';
 import { AppRoutingModule } from './app-routing.module';
-
+import { SkillsComponent } from './skills/skills.component';
+import { ExpComponent } from './exp/exp.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +35,8 @@ import { AppRoutingModule } from './app-routing.module';
     AboutComponent,
     PageNotFoundComponent,
     SocialIconComponent,
+    SkillsComponent,
+    ExpComponent,
   ],
   entryComponents: [HeaderComponent],
   imports: [
@@ -43,6 +50,8 @@ import { AppRoutingModule } from './app-routing.module';
     MatButtonModule,
     MatDialogModule,
     MatInputModule,
+    MatListModule,
+    MatButtonToggleModule,
     FormsModule,
   ],
   providers: [],

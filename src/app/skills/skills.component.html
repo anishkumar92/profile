@@ -1,0 +1,9 @@
+
+      <mat-button-toggle-group  *ngFor="let skill of skills" [(ngModel)]="myFlagForButtonToggle">
+        <mat-button-toggle  [value]="skill"  ngDefaultControl>{{skill}}</mat-button-toggle>
+       
+      </mat-button-toggle-group>
+
+      <h1><u>Selected Skill</u></h1>
+
+      {{myFlagForButtonToggle}}
