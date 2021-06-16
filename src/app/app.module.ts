@@ -21,10 +21,14 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { SocialIconComponent } from './social-icon copy/social-icon.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SkillsComponent } from './skills/skills.component';
 import { ExpComponent } from './exp/exp.component';
+import { ProfileService } from './profile.service';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+
+import { environment } from 'src/environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +38,6 @@ import { ExpComponent } from './exp/exp.component';
     ContactComponent,
     AboutComponent,
     PageNotFoundComponent,
-    SocialIconComponent,
     SkillsComponent,
     ExpComponent,
   ],
@@ -43,6 +46,8 @@ import { ExpComponent } from './exp/exp.component';
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig,'angularfs'),
+    AngularFirestoreModule,
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
@@ -54,7 +59,7 @@ import { ExpComponent } from './exp/exp.component';
     MatButtonToggleModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
