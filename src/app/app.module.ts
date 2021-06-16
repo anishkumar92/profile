@@ -17,7 +17,6 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -34,7 +33,6 @@ import { environment } from 'src/environments/environment';
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent,
     ContactComponent,
     AboutComponent,
     PageNotFoundComponent,
