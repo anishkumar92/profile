@@ -1,8 +1,21 @@
+<div class="container">
+  <div class="row">
+    <mat-button-toggle-group *ngFor="let skill of skills" [(ngModel)]="myFlagForButtonToggle">
+      <mat-button-toggle [value]="skill" ngDefaultControl>{{skill.skillName}}</mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+  <p *ngIf="!myFlagForButtonToggle">select a skill to view more</p>
 
-      <mat-button-toggle-group  *ngFor="let skill of skills" [(ngModel)]="myFlagForButtonToggle">
-        <mat-button-toggle  [value]="skill"  ngDefaultControl>{{skill.skillName}}</mat-button-toggle>
-      </mat-button-toggle-group>
+  <div *ngIf="myFlagForButtonToggle">
+    <h2>SKILL INFO</h2>
+    <div >Skil Name : {{myFlagForButtonToggle?.skillName}} </div>
+    <div > Start Date : {{myFlagForButtonToggle?.startDate.seconds  * 1000 | date:'dd/MM/yyyy'}} </div>
+    <div > Last  Used : {{myFlagForButtonToggle?.lastUsed  * 1000 | date:'dd/MM/yyyy'}} </div>
+    <div > Experience : {{myFlagForButtonToggle?.experience}} </div>
 
-      <h1><u>Selected Skill</u></h1>
+    <div > Version : {{myFlagForButtonToggle?.version}} </div>
 
-      {{myFlagForButtonToggle?.skillName}}
+
+  </div>
+
+</div>
