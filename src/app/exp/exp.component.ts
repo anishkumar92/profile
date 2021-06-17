@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exp.component.css']
 })
 export class ExpComponent implements OnInit {
-
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }

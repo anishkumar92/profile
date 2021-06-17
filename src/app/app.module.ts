@@ -28,6 +28,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 import { environment } from 'src/environments/environment';
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +45,7 @@ import { environment } from 'src/environments/environment';
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
+    FlexLayoutModule,
     AngularFireModule.initializeApp(environment.firebaseConfig,'angularfs'),
     AngularFirestoreModule,
     MatToolbarModule,
