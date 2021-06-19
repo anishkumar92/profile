@@ -9,6 +9,7 @@ import { ProfileService } from '../profile.service';
 })
 export class SkillsComponent implements OnInit,AfterViewInit {
   skills:Skills[];
+  isLoading = true;
   myFlagForButtonToggle : any;
   constructor(private profileService : ProfileService) {
 
@@ -18,6 +19,7 @@ export class SkillsComponent implements OnInit,AfterViewInit {
     // this.skills= ["Angular 2 to latest", "HTML", "CSS", "SCSS", "Typescript", "JavaScript with ES 6", "Visual Studio Code", "SQL", "UNIX", "GitHub", "Bit bucket", "GitLabs", "REST", "API", "Jenkins", "AWS S3", "Bootstrap", "Angular Materials", "ITIL ® Certified", "Incident, Change, Problem Management", "JIRA", "VSTS", "HP service Manager & Service Now"];
 this.profileService.getSkills().subscribe( skills => {
 this.skills  = skills
+this.isLoading = false;
   console.log("skills",skills)
 });
   }

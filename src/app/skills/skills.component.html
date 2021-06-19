@@ -1,4 +1,4 @@
-<div class="container">
+<div  *ngIf="!isLoading" class="container">
   <div class="row">
     <mat-button-toggle-group *ngFor="let skill of skills" [(ngModel)]="myFlagForButtonToggle">
       <mat-button-toggle [value]="skill" ngDefaultControl>{{skill.skillName}}</mat-button-toggle>
@@ -19,3 +19,5 @@
   </div>
 
 </div>
+
+<div *ngIf="isLoading" class="container">...loading</div>
