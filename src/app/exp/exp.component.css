@@ -1,7 +1,7 @@
 .container{
     /* display: grid;
     place-content: center; */
-    margin: 10px;
+    padding: 10px;
 }
 
 .example-card {
