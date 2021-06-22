@@ -1,23 +1,59 @@
-// body {
-//     position: relative; /* usually the parent, in this case the body element, has position relative so that the absolute positioned child is positioned relative to it */
-//     height: 100vh; /* 100% of the viewport height */
-//     margin: 0; /* recommended */
-
-//   }
+.cen-body {
+    // position: relative; /* usually the parent, in this case the body element, has position relative so that the absolute positioned child is positioned relative to it */
+    // height: 100vh; /* 100% of the viewport height */
+    // margin: 0; /* recommended */
+display: flex;
+justify-content: center;
+align-items: center;
+// min-height: 100vh;
+background-color: black;
+  }
   
 h1 {
   position: relative; /* taken out of the normal flow of the document */
  //  top: 0%;
   font-size: 50px;
-  color: #c2185b;
-  background-color: #c2185b;
-  background-image: linear-gradient(50deg, rgb(78, 179, 75), rgb(86, 206, 214));
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
- 
+  color: black;
+  // color: #c2185b;
+  // background-color: #c2185b;
+  // background-image: linear-gradient(50deg, rgb(78, 179, 75), rgb(86, 206, 214));
+  // background-size: 100%;
+  // -webkit-background-clip: text;
+  // -moz-background-clip: text;
+  // -webkit-text-fill-color: transparent; 
+  // -moz-text-fill-color: transparent;
+  // -webkit-text-stroke: 1px grey;
+//  text-transform: uppercase;
+word-wrap: none;
+overflow: hidden;
+
+ }
+
+ h1::before{
+   content: attr(data-text);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+  //  color: ;
+  color: #01fe87 ;
+  -webkit-text-stroke: 0vw grey;
+border-right: 2px solid #01fe87 ;
+overflow: hidden;
+animation: animate 5s ;
+ }
+
+ @keyframes animate 
+ {
+   0%,30%
+   {
+     width: 0;
+   }
+   70%,90%,100%
+   {
+    width: 100%;
+  }
  }
 
  .social-icon {
