@@ -1,4 +1,22 @@
 .container{
     display: grid;
     place-items: center;
+    color:#3ada8f;
+}
+
+.skill-type{
+color: white;
+font-size: large;
+font-weight: bold;
+}
+
+.skill-heading{
+color: white;
+
+}
+
+.skill-name{
+    font-size: large;
+    font-style: initial;
+    
 }
