@@ -7,7 +7,7 @@
   <p *ngIf="!myFlagForButtonToggle">select a skill to view more</p>
 
   <div *ngIf="myFlagForButtonToggle">
-    <h2 class="skill-heading">SKILL INFO!</h2>
+    <h2 class="skill-heading">SKILL INFO</h2>
     <div class="skill-name" ><span class="skill-type">Skill Name : </span>{{myFlagForButtonToggle?.skillName}} </div>
     <div ><span class="skill-type"> Start Date : </span>{{myFlagForButtonToggle?.startDate.seconds  * 1000 | date:'dd/MM/yyyy'}} </div>
     <div > <span class="skill-type">Last  Used : </span>{{myFlagForButtonToggle?.lastUsed.seconds  * 1000 | date:'dd/MM/yyyy'}} </div>
